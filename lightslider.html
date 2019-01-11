@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="src/css/lightslider.css"/>
+    
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+<ul id="vertical">
+  <li data-thumb="img/thumb/cS-1.jpg">
+    <img src="img/cS-1.jpg" />
+  </li>
+  <li data-thumb="img/thumb/cS-2.jpg">
+    <img src="img/cS-2.jpg" />
+  </li>
+</ul>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="src/js/lightslider.js"></script> 
+
+    <script type="text/javascript">
+  $(document).ready(function() {
+    $('#vertical').lightSlider({
+      gallery:true,
+      item:1,
+      vertical:true,
+      verticalHeight:295,
+      vThumbWidth:50,
+      thumbItem:8,
+      thumbMargin:4,
+      slideMargin:0
+    });  
+  });
+          
+    </script>
+
+</body>

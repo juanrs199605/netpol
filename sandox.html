@@ -7,6 +7,9 @@
   <title>Sandbox: Drawer Right</title>
   <link href="css/sandbox.css" rel="stylesheet">
   <link href="dist/css/drawer.min.css" rel="stylesheet">
+
+  <!-- Responsive Video Slider CSS -->
+  <link href="css/rvslider.min.css" rel="stylesheet">
   <style type="text/css">
     .container-contactenos{
       background-image: url("img/mapacalle.jpg");
@@ -75,27 +78,52 @@
       background:  rgb(158, 156, 156);
       opacity:1;
 }
+.naranja{
+  color: rgb(255, 114, 0);
+}
+.rvs-container{
+  background: transparent;
+}
+.rvs-nav-item:hover{
+  background: transparent !important; 
+}
+.rvs-nav-item:active{
+background-color: transparent;
+}
+.rvs-active{
+  background-color: transparent !important; 
+  border-color : transparent !important; 
+}
+.rvs-nav-item{
+  border-color: transparent;
+}
+.rvs-container a.rvs-nav-item, .rvs-container a.rvs-nav-item:active, .rvs-container a.rvs-nav-item:focus, .rvs-container a.rvs-nav-item:hover, .rvs-container a.rvs-nav-next, .rvs-container a.rvs-nav-next:active, .rvs-container a.rvs-nav-next:focus, .rvs-container a.rvs-nav-next:hover, .rvs-container a.rvs-nav-prev, .rvs-container a.rvs-nav-prev:active, .rvs-container a.rvs-nav-prev:focus, .rvs-container a.rvs-nav-prev:hover, .rvs-nav-container{
+    border-color: transparent !important; 
+}
   </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-}
+
+  <link rel="stylesheet" href="css/sildervertical.css">
 
 </head>
 <body >
   <!-- content -->
   <main role="main" style="width: 100% !important;">
-<div class="container-fluid">
+<div class="container-fluid" id="container-inicial">
   <div class="row">
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 100%;display: block;">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 100%;display: block;max-height: 450px;">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <span style="text-align:center;position:absolute; z-index:1;font-size: 2.5em;width: 100%;color: #ffffff">-Más liviano es más facil, Más liviano es mejor.</span>
-      <img class="d-block w-100" src="img/fondo01.jpg" alt="First slide" style="width: 100%;display: block;" />
+      <img class="d-block w-100" src="img/edificios.jpg" alt="First slide" style="width: 100%;display: block;max-height: 350px;" />
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/fondo01.jpg" alt="Second slide" style="width: 100%;" />
+        <span style="text-align:center;position:absolute; z-index:1;font-size: 2.5em;width: 100%;color: #ffffff">-Más liviano es más facil, Más liviano es mejor.</span>
+      <img class="d-block w-100" src="img/edificios.jpg" alt="Second slide" style="width: 100%;" />
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/fondo01.jpg" alt="Third slide" style="width: 100%;" />
+        <span style="text-align:center;position:absolute; z-index:1;font-size: 2.5em;width: 100%;color: #ffffff">-Más liviano es más facil, Más liviano es mejor.</span>
+      <img class="d-block w-100" src="img/edificios.jpg" alt="Third slide" style="width: 100%;" />
     </div>
   </div>
 </div>
@@ -133,10 +161,42 @@
   <!--container-fluid-->
   <div class="container-producto">
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="col-sm" style="float right !important;font-size: 1.1em;    width: auto;
+    float: right;">
+            <h2 style="color: rgb(255, 153, 0);">Características</h2>
+            <ul>
+                <li>A medida del diseño</li>
+                 <li>Fáciles de manipular / buena trabajabilidad</li>
+              <li>Livianos – Resistentes - Transitables</li>
+            </ul>
+
+        </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <div class="container" style="margin-top: 25px;">
-    <h3>Paneles para Aislamiento Térmico</h3>
+      <img class="d-block" 
+      src="img/fondo01.jpg" alt="Second slide"
+      style="display: block;margin: 0 auto;max-height: 15em;">
+    </div>
+  <!-- 
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+-->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <div class="container" style="margin-top: 25px;">
+    <h3 class="naranja">Paneles para Aislamiento Térmico</h3>
     <div class="row">
       <div class="col-sm" style="color: #ffff;">
         Ofrecemos planchas o paneles de
@@ -167,28 +227,107 @@
       </div>
     </div>
   </div>
-    </div>
-  <!-- 
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
-    </div>
--->
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
   </div>
   <div class="container container-infraestructura">
-    <img class="img-fluid" src="img/fabricapolitileno.jpg" alt="" style="display: block;margin: auto;">
+   <!-- <img class="img-fluid" src="img/fabricapolitileno.jpg" alt="" style="display: block;margin: auto;">-->
+<div class="rvs-container">
+
+  <div class="rvs-item-container">
+    <div class="rvs-item-stage">
+
+      <!-- The below is a single item, simply duplicate this layout for each item -->
+      <div class="rvs-item" style="background-image: url(img/politileno01.jpg)">
+        <!--<p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>-->
+        <!--<a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+      <div class="rvs-item" style="background-image: url(img/politileno02.jpg)">
+        <!--<p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+      <div class="rvs-item" style="background-image: url(img/politileno03.jpg)"><!--
+        <p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+      <div class="rvs-item" style="background-image: url(img/politileno04.jpg)">
+        <!--<p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+      <div class="rvs-item" style="background-image: url(img/politileno05.jpg)">
+        <!--
+        <p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+      <div class="rvs-item" style="background-image: url(img/politileno06.jpg)">
+        <!--
+        <p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+
+      <div class="rvs-item" style="background-image: url(img/politileno01.jpg)">
+        <!--
+        <p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+        <a href="VIDEO_URL" class="rvs-play-video"></a>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="rvs-nav-container">
+    <a class="rvs-nav-prev"></a>
+    <div class="rvs-nav-stage">
+
+      <!-- The below is the corresponding nav item for the single item, simply duplicate this layout for each item -->
+      <a class="rvs-nav-item">
+        <img src="img/politileno01.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+      <a class="rvs-nav-item">
+       <img src="img/politileno02.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+            <a class="rvs-nav-item">
+       <img src="img/politileno03.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+            <a class="rvs-nav-item">
+        <img src="img/politileno04.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+            <a class="rvs-nav-item">
+        <img src="img/politileno05.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+      <a class="rvs-nav-item">
+          <!--<span class="rvs-nav-item-thumb" style="background-image: url(img/politileno06.jpg)"></span>-->
+
+        <img src="img/politileno06.jpg" alt="" style="width: 100%;max-height: 150px; ">
+        <!--
+        <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+      <a class="rvs-nav-item">
+        <!--
+        <span class="rvs-nav-item-thumb" style="background-image: url(img/politileno01.jpg); background-size: 100% 100%;"></span>
+        -->
+        <img src="img/politileno01.jpg" alt="" style="width:100%;">
+        <!--<h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+        <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>-->
+      </a>
+
+    </div>
+    <a class="rvs-nav-next"></a>
+  </div>
+
+</div>
   </div>
   <div class="container-fluid container-contactenos">
     <div class="row">
@@ -296,15 +435,15 @@
   </main>
 
   <div class="drawer drawer--right">
-  <header role="banner">
+  <header role="banner" data-spy="scroll" data-target=".navbar" data-offset="50">
     <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
       <span class="drawer-hamburger-icon"></span>
     </button>
 
-    <nav class="drawer-nav" role="navigation" >
+    <nav class="drawer-nav" role="navigation" data-spy="scroll" data-target="#myScrollspy" data-offset="1" >
       <ul class="drawer-menu" style="padding-top: 80px;">
-        <li><a class="drawer-brand" href="./index.html">INICIO</a></li>
+        <li><a class="drawer-brand" href="#carouselExampleSlidesOnly">INICIO</a></li>
         <li><a class="drawer-menu-item" href="#">NOSOTROS</a></li>
         <li><a class="drawer-menu-item" href="#">PRODUCOS</a></li>
         <li><a class="drawer-menu-item" href="#">INFRAESTRUCTURA</a></li>
@@ -317,6 +456,13 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slidervertical.js"></script>
+<script src="js/rvslider.min.js"></script>
+<script>
+  jQuery(function($){
+    $('.rvs-container').rvslider();
+  });
+</script>
 <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 -->
